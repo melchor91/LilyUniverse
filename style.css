@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    background:#010104;
+    font-family:Georgia,serif;
+}
+
+canvas{
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+#intro{
+    position:fixed;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:#010104;
+    color:white;
+    z-index:9999;
+    cursor:pointer;
+    transition:opacity 1.5s;
+}
+
+#intro h1{
+    font-size:56px;
+    margin-bottom:20px;
+}
+
+#intro p{
+    font-size:22px;
+    opacity:.85;
+}
+
+#intro.hidden{
+    opacity:0;
+    pointer-events:none;
+}
