@@ -5,11 +5,11 @@ import { scene } from "./main.js";
 
 const loader = new THREE.TextureLoader();
 
-const sunTexture = loader.load("/textures/sun.png");
-const earthTexture = loader.load("/textures/earth.png");
-const moonTexture = loader.load("/textures/moon.png");
-const saturnTexture = loader.load("/textures/saturn.png");
-const saturnRingTexture = loader.load("/textures/saturn_ring.png");
+const sunTexture = loader.load(import.meta.env.BASE_URL + "textures/sun.png");
+const earthTexture = loader.load(import.meta.env.BASE_URL + "textures/earth.png");
+const moonTexture = loader.load(import.meta.env.BASE_URL + "textures/moon.png");
+const saturnTexture = loader.load(import.meta.env.BASE_URL + "textures/saturn.png");
+const saturnRingTexture = loader.load(import.meta.env.BASE_URL + "textures/saturn_ring.png");
 
 export let sun;
 export let sunHalo;
