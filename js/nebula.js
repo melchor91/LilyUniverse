@@ -5,7 +5,7 @@ import { scene } from "./main.js";
 const loader = new THREE.TextureLoader();
 
 const nebulaTexture = loader.load(
-    "../assets/textures/nebula.png"
+    "/textures/nebula.png"
 );
 
 export let nebula;

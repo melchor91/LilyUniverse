@@ -4,7 +4,7 @@ import { scene } from "./main.js";
 const loader = new THREE.TextureLoader();
 
 const starTexture = loader.load(
-    "../assets/textures/star.png"
+    "/textures/star.png"
 );
 
 let starField;

@@ -6,7 +6,7 @@ import { showFinalMessages } from "./finalMessages.js";
 const loader = new THREE.TextureLoader();
 
 const starTexture = loader.load(
-    "../assets/textures/star.png"
+    "/textures/star.png"
 );
 
 let heartGroup;

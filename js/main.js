@@ -75,7 +75,7 @@ import {
 // MÚSICA
 //=====================================
 
-const music = new Audio("./assets/audio/music.mp3");
+const music = new Audio("/audio/music.mp3");
 
 music.loop = false;
 music.volume = 0.15;
