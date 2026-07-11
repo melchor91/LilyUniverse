@@ -6,7 +6,7 @@ import { showFinalMessages } from "./finalMessages.js";
 const loader = new THREE.TextureLoader();
 
 const starTexture = loader.load(
-    "/textures/star.png"
+    import.meta.env.BASE_URL + "textures/star.png"
 );
 
 let heartGroup;
@@ -51,7 +51,7 @@ export function createHeart(x, y, z) {
 
         const star = new THREE.Sprite(material);
 
-        const scale = 1.9 + Math.random() * 1.0;
+        const scale = 2.3 + Math.random() * 1.2;
 
         star.scale.set(
             scale,
@@ -60,8 +60,8 @@ export function createHeart(x, y, z) {
         );
 
         star.position.set(
-            x * 1.8,
-            y * 1.8,
+            x * 1.62,
+            y * 1.62,
             0
         );
 
