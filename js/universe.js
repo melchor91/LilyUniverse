@@ -4,7 +4,7 @@ import { scene } from "./main.js";
 const loader = new THREE.TextureLoader();
 
 const starTexture = loader.load(
-    "/textures/star.png"
+    import.meta.env.BASE_URL + "textures/star.png"
 );
 
 let starField;
@@ -93,22 +93,25 @@ export function createUniverse() {
 
     );
 
-    const material =
-        new THREE.PointsMaterial({
+const material = new THREE.PointsMaterial({
 
-        map: starTexture,
+    map: starTexture,
 
-        size: 3,
+    size: 4.5,
 
-        transparent: true,
+    transparent: true,
 
-        vertexColors: true,
+    alphaTest: 0.01,
 
-        depthWrite: false,
+    vertexColors: true,
 
-        blending: THREE.AdditiveBlending
+    depthWrite: false,
 
-    });
+    sizeAttenuation: true,
+
+    blending: THREE.AdditiveBlending
+
+});
 
     starField =
         new THREE.Points(

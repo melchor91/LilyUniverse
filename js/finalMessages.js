@@ -33,7 +33,7 @@ const frases = [
         const ctx = canvas.getContext("2d");
 
         ctx.fillStyle = "#ffffff";
-        ctx.font = "55px Georgia";
+        ctx.font = "43px Georgia";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
 
@@ -72,7 +72,7 @@ const frases = [
 
         const sprite = new THREE.Sprite(material);
 
-        sprite.scale.set(55, 14, 1);
+        sprite.scale.set(42, 11, 1);
 
         sprite.visible = false;
 
@@ -88,16 +88,16 @@ export function showFinalMessages(x, y, z){
 
    const positions = [
 
-    { x: 0,  y: 24 },    // arriba
+    { x: 0,  y: 19 },    // arriba
 
-    { x: -42, y: 12 },   // arriba izquierda
-    { x: 42,  y: 12 },   // arriba derecha
+    { x: -28, y: 10 },   // arriba izquierda
+    { x: 28,  y: 10 },   // arriba derecha
 
-    { x: -46, y: -8 },   // centro izquierda
-    { x: 43,  y: -8 },   // centro derecha
+    { x: -30, y: -6 },   // centro izquierda
+    { x: 30,  y: -6 },   // centro derecha
 
-    { x: -22, y: -30 },  // abajo izquierda
-    { x: 23,  y: -30 }   // abajo derecha
+    { x: -16, y: -24 },  // abajo izquierda
+    { x: 16,  y: -24 }   // abajo derecha
 
 ];
 

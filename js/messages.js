@@ -13,7 +13,7 @@ export function createMessages(){
 
     message.style.position = "fixed";
 
-    message.style.left = "50px";
+    message.style.left = "30px";
 
     message.style.bottom = "90px";
 
@@ -23,7 +23,7 @@ export function createMessages(){
 
     message.style.textShadow = "0 0 12px rgba(0,0,0,0.9)";
 
-    message.style.fontSize = "32px";
+    message.style.fontSize = "26px";
 
     message.style.lineHeight = "1.5";
 
@@ -37,7 +37,8 @@ export function createMessages(){
 
     message.style.pointerEvents = "none";
 
-    message.style.width = "420px";
+    message.style.width = "75vw";
+    message.style.maxWidth = "420px";
 
     document.body.appendChild(message);
 

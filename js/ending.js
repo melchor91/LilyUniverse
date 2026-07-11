@@ -29,7 +29,6 @@ export function createEnding(texto){
 
     ctx.shadowColor = "#b062e0";
     ctx.shadowBlur = 35;
-
     ctx.fillStyle = "#ffffff";
 
  if(texto === "Fin del viaje."){
